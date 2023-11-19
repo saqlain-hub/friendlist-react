@@ -4,7 +4,6 @@ import FriendList from "./components/FriendList";
 import AddFriend from "./components/AddFriend";
 
 function App() {
-  console.log("app render");
   const [friends, setFriends] = useState(["Saqlain", "Shahzad"]);
 
   const addFriend = (e, friend) => {
