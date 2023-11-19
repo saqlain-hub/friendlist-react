@@ -5,7 +5,7 @@ import AddFriend from "./components/AddFriend";
 
 function App() {
   console.log("app render");
-  const [friends, setFriends] = useState(["Bob", "Jane"]);
+  const [friends, setFriends] = useState(["Saqlain", "Shahzad"]);
 
   const addFriend = (e, friend) => {
     e.preventDefault();
@@ -13,12 +13,12 @@ function App() {
   };
 
   return (
-    <>
+    <div className="container">
       <p className="friend-list">Friends List</p>
       <AddFriend addFriend={addFriend} />
       <FriendList friends={friends} />
       <p>Developed By Saqlain Javed</p>
-    </>
+    </div>
   );
 }
 

@@ -8,7 +8,6 @@ const FriendList = ({ friends }) => {
       {friends.map((friend) => {
         {
           i += 1;
-          console.log(i);
         }
         return <li key={i}>{friend}</li>;
       })}
